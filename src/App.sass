@@ -1,0 +1,80 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: sans-serif
+
+.app
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+
+.header
+  text-align: center
+  margin-bottom: 15px
+
+.container
+  width: 95%
+  max-width: 300px
+
+.step
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__count
+    color: #c1c1c1
+    margin-bottom: 15px
+  &__cancel, &__next
+    border: 1px solid grey
+    background-color: #ececec
+    padding: 7px 10px
+    border-radius: 12px
+    font-size: 16px
+    text-decoration: none
+    color: #000
+    &:hover
+      background-color: #ababab
+  &__cancel
+    margin-right: 5px
+  &__actions
+    margin-top: 10px
+
+.form
+  width: 100%
+  border: 1px solid grey
+  margin-bottom: 10px
+  &__question
+    padding: 10px 15px
+    text-align: center
+    color: blue
+    background-color: #ececec
+  &__inner
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 10px 30px
+
+.step-1, .step-3
+  &__answers
+    margin-right: auto
+
+
+.step-2
+  &__input
+    height: 30px
+    width: 80px
+
+.step-4
+  &__input
+    height: 30px
+    width: 80px
+  &__cross
+    display: inline-block
+    margin: 0 10px
+
+.result
+  &__ok
+    color: green
+  &__error
+    color: red
